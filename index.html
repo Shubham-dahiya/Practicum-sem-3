@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css"/>
+    
+    <title>Resume Generator</title>
+</head>
+<body>
+    <div class="container" id="cv-form">
+    <h1 class="text-center my-2">Resume Generator</h1>
+    <p class="text-center">By group#</p>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                  <!--first col-->
+                <h3>Personal Information</h3>
+                <div class="form-group">
+                    <label for="nameField">Your Name</label>
+                    <input type="text" id="nameField" placeholder="Enter here" class="form-control">
+                </div>  
+
+                <div class="form-group">
+                    <label for="contactField">Your Contact</label>
+                    <input type="text" id="contactField" placeholder="Enter here" class="form-control">
+                </div>  
+
+                <div class="form-group mt-2">
+                    <label for="addressField">Your Address</label>
+                    <textarea id="addressField" placeholder="Enter here" class="form-control" rows="4"></textarea>
+                </div>
+                
+                <p class="text-secondary my-3">Important Links</p>
+                <div class="form-group mt-2">
+                    <label for="fbField">Facebook</label>
+                    <input type="text" id="fbField" placeholder="Enter here" class="form-control">
+                </div>  
+
+                <div class="form-group mt-2">
+                    <label for="instaField">Instagram</label>
+                    <input type="text" id="instaField" placeholder="Enter here" class="form-control">
+                </div>  
+
+                <div class="form-group mt-2">
+                    <label for="linkedinField">LinkedIn</label>
+                    <input type="text" id="linkedinField" placeholder="Enter here" class="form-control">
+                </div>   
+            </div>
+            
+            
+            
+            <div class="col-md-6">
+                   <!--second col-->
+                <h3>Professional Information</h3>
+
+                <div class="form-group mt-2">
+                    <label for="">Objective</label>
+                    <textarea id="objectiveField" placeholder="Enter here" class="form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group mt-2" id="we">
+                    <label for="">Work Experience</label>
+                    <textarea placeholder="Enter here" class="form-control weField" rows="3"></textarea>
+
+                    <!--new textarea-->
+
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea id="" placeholder="Enter here" class="form-control aqField" rows="3"></textarea>
+
+                    <div class="container text-center mt-2" id="aqAddButton">
+                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-3">
+            <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>
+        </div>
+    </div>
+
+    <!--cv template-->
+
+    <div class="container" id="cv-template">
+
+        <div class="row">
+
+            <div class="col-md-4 text-center py-5 background">
+                <!-- first column -->
+                <img 
+                src="https://support.bookingkare.com/wp-content/uploads/2019/08/default-profile-picture.jpg" 
+                alt="profile" 
+                class="img-fluid myimg"
+                >
+
+                <div class="container">
+                    <p id="nameT1">xyz</p>
+                    <p id="contactT">9116393234</p>
+                    <p id="addressT">house no- 468, ward no-6, sangaria, Rajasthan</p>
+                    <hr>
+                    <p>
+                        <a id="fbT" href="#1"></a>
+                    </p>
+                    <p>
+                        <a id="instaT" href="#1"></a>
+                    </p>
+                    <p>
+                        <a id="linkedT" href="#1"></a>
+                    </p>
+                </div>
+                   
+            </div>
+            <div class="col-md-8 py-5">
+                <!-- second column -->
+                <h1 id="nameT2" class="text-center" style="font-weight: 980;">xyz</h1>
+
+
+                <!--Objective card-->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat doloribus eaque odit omnis laborum dolores quaerat veritatis excepturi accusamus. Nihil voluptate quibusdam amet doloribus, rem quo! Officiis necessitatibus explicabo vel quis harum laboriosam, aperiam ducimus rem quia distinctio dolores unde autem dolor minus! Dignissimos omnis reprehenderit ducimus ipsum autem beatae quidem ab itaque, molestias voluptas vitae praesentium esse quasi, sequi vero hic sapiente veniam animi voluptatum harum. Adipisci, nostrum reiciendis quis, ipsam expedita animi beatae recusandae dolorum deleniti voluptas porro amet sit nam. 
+                            Mollitia non odit perspiciatis aliquam cumque optio molestias! Non recusandae placeat deserunt fugiat dicta debitis perferendis minima repudiandae quis nam temporibus, unde dignissimos qui minus, at consectetur dolorum quod natus dolor. Corporis, harum. Rem, magnam cupiditate fugiat quis, reiciendis repudiandae assumenda nulla esse sit ad magni quas impedit ut deleniti! Esse voluptatibus ut mollitia! Et porro adipisci sint iure assumenda ducimus commodi incidunt, ex debitis beatae sed vero cum molestiae nulla qui explicabo at! Aliquid tempore vero quae. Cum atque ea eaque error, soluta suscipit voluptates iusto quod itaque adipisci placeat fuga quasi reiciendis odit. Laborum magnam facilis ullam esse, commodi eius ut suscipit error repellat asperiores quibusdam tempore temporibus, ab autem explicabo? Accusantium maiores, assumenda tempore dolore consectetur minima tenetur, nostrum aspernatur, laboriosam recusandae atque eum consequatur sed? Expedita sapiente numquam odit adipisci. 
+                            Libero iure aut beatae doloremque iusto enim eveniet fugiat ducimus. Quidem minus, quasi veniam nemo, amet in exercitationem velit expedita dolorum minima fugiat repellat enim laborum laboriosam! Aliquam modi error ab adipisci minima enim nisi distinctio deserunt magni laboriosam repellendus blanditiis earum corporis beatae recusandae, velit temporibus dolore culpa id animi sit non laborum. Quisquam, porro quas, perferendis perspiciatis accusantium voluptatibus non laboriosam aspernatur hic cumque quibusdam, magnam nobis maiores? Nihil, amet, earum labore quidem consectetur quam dicta eligendi, quibusdam nemo saepe cupiditate.
+                        </p>
+                    </div>
+                </div>
+
+                 <!--Work Experience-->
+
+                 <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                       <ul id="weT">
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                       
+                      
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                       
+                      
+                           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                       </ul>
+                    </div>
+                </div>
+
+
+                <!--Academic Qualification-->
+
+                <div class="card mt-4">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="aqT">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                        
+                        
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                        
+                        
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde!</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="container mt-3 text-center">
+                    <button onclick="printCV()" class="btn background">print CV</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
